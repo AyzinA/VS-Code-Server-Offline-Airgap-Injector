@@ -1,4 +1,4 @@
-# VS Code Offline Airgap Injector
+# VS Code Server Offline Airgap Injector
 
 This project provides a robust, two-part solution for using **VS Code Remote-SSH** on servers with **no internet access**. It automates the process of matching the correct VS Code Server and CLI versions, downloading them to a USB drive, and injecting them into the remote environment.
 
@@ -74,5 +74,6 @@ Once the script says `[COMPLETE]`:
 If the remote setup fails, ensure your remote user has write permissions to their own `$HOME` directory and the `/tmp` folder.
 
 ### "Node.js failed to execute"
+
 
 VS Code Server requires a relatively modern Linux environment. If you see this error, your remote server might be missing `libstdc++` or `glibc`. On Arch, ensure `gcc-libs` is installed.
